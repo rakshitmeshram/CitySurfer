@@ -1,0 +1,29 @@
+# Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Editor
+.idea/
+
+# Database
+db.sqlite3
+
+# Static files
+static/
+
+# Other
+*.log
+*.bak
+*.tmp
+*.DS_Store
+
+# Environment Variables
+.env 
