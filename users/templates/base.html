@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}CitySurfer</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="{% url 'locations:location_list' %}">Locations</a></li>
+          {% if user.is_authenticated %}
+            <li><a href="{% url 'users:profile' %}">Profile</a></li>
+            <li><a href="{% url 'users:logout' %}">Logout</a></li>
+          {% else %}
+            <li><a href="{% url 'users:login' %}">Login</a></li>
+            <li><a href="{% url 'users:signup' %}">Sign Up</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+  </body>
+</html>

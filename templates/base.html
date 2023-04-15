@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}CitySurfer{% endblock %}</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" integrity="sha512-Ypqf4aZ/DJIZtqqmGAs7ziE23yBBlHJwQYDgJl/S+k5vn5J5/d5bEMNAtWlnp9D+YNLItGXUaPvZWaWJp8vvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </head>
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Header -->
+    <header class="bg-white">
+      <nav class="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
+        <div class="flex items-center justify-between">
+          <a class="text-xl font-bold text-gray-800 md:text-2xl hover:text-gray-700" href="{% url 'home' %}">
+            CitySurfer
+          </a>
+          <button type="button" class="block md:hidden">
+            <svg class="h-6 w-6 fill-current text-gray-900" viewBox="0 0 24 24">
+              <path class="heroicon-ui" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden md:flex items-center">
+          <a class="text-gray-800 hover:text-gray-600 px-4 py-2 flex items-center transition duration-150 ease-in-out" href="{% url 'home' %}">
+            Home
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container mx-auto pt-8">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+      <div class="container mx-auto px-6 py-3">
+        <div class="text-center text-gray-500">
+          <p>&copy; 2023 CitySurfer. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
