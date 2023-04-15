@@ -27,3 +27,6 @@ static/
 
 # Environment Variables
 .env 
+
+# Keys
+citysurfer01-firebase-adminsdk-rwzho-fda9b9ff0b.json
