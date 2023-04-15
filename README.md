@@ -129,6 +129,15 @@ city_surfer/
 └── requirements.txt
 ```
 
+## Keys Required
+- Google Maps API Key
+- Firebase Authentication API Key
+- Firebase Realtime Database URL
+- Firebase Realtime 
+- Database Secret
+
+To obtain these keys, you will need to sign up for the respective services and follow their documentation to generate the API keys and secrets. Make sure to keep these keys and secrets secure and do not share them publicly.
+
 ## License
 
 CitySurfer is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
