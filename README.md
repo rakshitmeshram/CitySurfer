@@ -1,3 +1,5 @@
+![](https://github.com/RakshitMeshram/city_surfer/blob/main/banner.png)
+
 # CitySurfer - A Location Recommendation Engine
 
 CitySurfer is a machine learning-powered location recommendation engine that helps users discover new and interesting locations in a city. The application collects data on various locations such as restaurants, cafes, parks, and tourist attractions using the Google Maps API and generates recommendations based on user preferences and filters. The backend of the application is built with Django and Firebase, and the frontend is styled using the Tailwind CSS framework.
