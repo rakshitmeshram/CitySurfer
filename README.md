@@ -1,14 +1,23 @@
-# CitySurfer
+# CitySurfer - A Location Recommendation Engine
 
-CitySurfer is a location recommendation engine that generates recommendations for restaurants, cafes, parks, and tourist attractions based on user filters. The app uses the Google Maps API to collect data on various locations and offers a user-friendly interface to search and browse through the results.
+CitySurfer is a machine learning-powered location recommendation engine that helps users discover new and interesting locations in a city. The application collects data on various locations such as restaurants, cafes, parks, and tourist attractions using the Google Maps API and generates recommendations based on user preferences and filters. The backend of the application is built with Django and Firebase, and the frontend is styled using the Tailwind CSS framework.
 
 ## Features
 
-- Search for places based on keywords and location
-- Filter results by category, rating, and distance
-- View detailed information for each place, including photos and reviews
-- Get directions to the place using Google Maps
-- Responsive design for mobile and desktop devices
+CitySurfer has several features that make it a useful tool for exploring a city:
+
+- Personalized recommendations based on user preferences
+- Filters for refining search results based on category, rating, and popularity
+- Integration with Google Maps for easy navigation to recommended locations
+- User authentication and profile management for personalized experiences
+- Admin panel for managing location data and user accounts
+
+## Technical Details
+The backend of CitySurfer is built with Django, a high-level Python web framework. Django provides a robust and secure foundation for building web applications, and is known for its scalability and flexibility. Firebase, a cloud-based mobile and web application development platform, is used as a backend service for handling user authentication and data storage.
+
+The machine learning model used in CitySurfer is a collaborative filtering algorithm that recommends locations based on the user's past behavior and preferences. The model is trained on a dataset of location ratings and reviews, and is updated in real-time as users interact with the application.
+
+The frontend of CitySurfer is styled using Tailwind CSS, a utility-first CSS framework that makes it easy to rapidly prototype and customize the appearance of the application. The user interface is designed to be intuitive and user-friendly, with a focus on simplicity and ease of use.
 
 ## Requirements
 
